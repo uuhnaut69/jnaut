@@ -1,0 +1,27 @@
+[versions]
+quarkus = "3.25.4"
+junit = "5.12.1"
+commons-text = "1.13.0"
+jandex = "2.2.0"
+foojay-resolver = "1.0.0"
+mapstruct = "1.6.3"
+
+[plugins]
+quarkus = { id = "io.quarkus", version.ref = "quarkus" }
+jandex = { id = "org.kordamp.gradle.jandex", version.ref = "jandex" }
+foojay-resolver = { id = "org.gradle.toolchains.foojay-resolver-convention", version.ref = "foojay-resolver" }
+
+[libraries]
+quarkus-rest = { module = "io.quarkus:quarkus-rest" }
+quarkus-config-yaml = { module = "io.quarkus:quarkus-config-yaml" }
+quarkus-arc = { module = "io.quarkus:quarkus-arc" }
+quarkus-junit5 = { module = "io.quarkus:quarkus-junit5" }
+rest-assured = { module = "io.rest-assured:rest-assured" }
+commons-text = { module = "org.apache.commons:commons-text", version.ref = "commons-text" }
+quarkus-bom = { module = "io.quarkus.platform:quarkus-bom", version.ref = "quarkus" }
+quarkus-hibernate-reactive = { module = "io.quarkus:quarkus-hibernate-reactive" }
+quarkus-hibernate-reactive-panache = { module = "io.quarkus:quarkus-hibernate-reactive-panache" }
+quarkus-reactive-pg-client = { module = "io.quarkus:quarkus-reactive-pg-client" }
+quarkus-jackson = { module = "io.quarkus:quarkus-jackson" }
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct"}
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct"}
